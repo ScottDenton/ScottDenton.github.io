@@ -1,0 +1,95 @@
+html {
+    height: 100%;
+
+  }
+  body {
+     width: 90%;
+     height: 100%;
+     padding-left:30px;
+     background-image: url("hiking-background.jpg");
+     
+     color:white;
+     
+  }
+
+  header {
+    border: 2px ridge rgb(96, 194, 207);
+      padding: 5px;
+      font-size:1.2em ;
+      display: block;
+      text-align: center;
+      background-image: url("snow-pic.jpg");
+      background-attachment: fixed;
+  }
+  nav {
+      float: left;
+      width: 100%;
+     
+     
+  }
+  nav ul {
+      padding-left:40%;
+      float: left;
+      border-bottom: ;
+      list-style-type: none;
+  }
+  nav li {
+      float: left;
+  }
+  nav li a {
+      display: block;
+      height: 25px;
+      padding: 12px 18px 8px 18px;
+      
+      
+  }
+  a {
+      color:#ece3e7 ;
+  }
+  a:hover {
+      color:#4195ce;
+  }
+  
+  section {
+      width: 90%;
+      display: inline-block;
+      
+  }
+ 
+ 
+  h1{
+      color:white;
+  }
+
+
+  h2{
+   color: white   ;
+  }
+
+  p{
+      max-width: 50%;
+  }
+
+  
+  .links-image{
+    float:right;
+    height:200px;
+    padding:20px;
+  }
+
+  footer {
+      margin-left:50px;
+      padding-bottom:20px;
+  }
+   
+        
+  
+  .article{
+     clear:both;
+      margin-bottom:30px;
+      padding-bottom:90px;
+      width:90%;
+      
+  }
+
+ 
