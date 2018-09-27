@@ -1,11 +1,10 @@
-//create dogs
+//constructor for creating dogs including the method to calculate points for each
 function dog (breed, build, activityLevel, inside, hair) {
     this.breed = breed;
     this.build = build;
     this.activityLevel = activityLevel;
     this.inside = inside;
     this.hair = hair;
-
     this.calculatePoints = function(){
        var points = 0;
         if(this.build === 'small'){
@@ -33,14 +32,11 @@ function dog (breed, build, activityLevel, inside, hair) {
         } else {
             points += 2000;
         }         
-        
-return points;
+    return points;
     }
     }
  
-
-
-
+//Doggies
     var labrador = new dog ('Labrador','large', 'yes', 'both', 'medium' );
     var labradorPoints = labrador.calculatePoints();
  
@@ -98,28 +94,28 @@ function restart(){
 
 function resetBtns(){
     total = 0;
-//question 1
+// Clear radio buttons
     var radioList = document.getElementsByName("q1");
     for (var i = 0; i < radioList.length; i++) {
         if(radioList[i].checked) {
             radioList[i].checked = false;
         }
     }
-//question 2
+
     var radioList2 = document.getElementsByName("q2");
     for (var i = 0; i < radioList2.length; i++) {
         if(radioList2[i].checked) {
             radioList2[i].checked = false;
         }
     }
-//question 3
+
     var radioList3 = document.getElementsByName("q3");
     for (var i = 0; i < radioList3.length; i++) {
         if(radioList3[i].checked) {
             radioList3[i].checked = false;
         }
     }
-//question 4
+
     var radioList4 = document.getElementsByName("q4");
     for (var i = 0; i < radioList4.length; i++) {
         if(radioList4[i].checked) {
@@ -136,38 +132,37 @@ function result(){
     var q3 = document.getElementById("myQuiz").q3.value;
     var q4 = document.getElementById("myQuiz").q4.value;
 
-    
 //Question 1
     if (q1 === '1'){
         total++;
     } else {
-        total +=2;
+        total += 2;
     } 
 
 //Question 2
         if(q2 === '1'){
-        total+=10;
+        total += 10;
     } else {
-        total +=20
+        total += 20
     }
 
  //Question 3  
     if(q3 === '1'){
-        total +=100;
+        total += 100;
     } else if (q3 ==='2'){
-        total +=200;
+        total += 200;
     } else {
-        total +=300;
+        total += 300;
     }
         
  //Question 4
     if(q4 === '1'){
         total += 1000;
     } else {
-     total +=2000;
+     total += 2000;
     }
-
-
+    
+//display result
     document.getElementById("result").classList.remove('hidden');
 
     if (total === labradorPoints|| total === 2122 || total ===1312) {
@@ -237,8 +232,7 @@ function result(){
     
      resetBtns();
     
-    
-    
+ 
 }
 
 
